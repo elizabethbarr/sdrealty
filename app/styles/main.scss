@@ -17,7 +17,7 @@ body {
 
 .header {
     border-bottom: 1px solid #e5e5e5;
-    background: url(canstockphoto8437979.jpg) no-repeat center top fixed;
+    background: url(../images/canstockphoto8437979 (2) copy.jpg) no-repeat center top fixed;
     background-size: 100%;
     height: 650px;
     color: white;
@@ -26,27 +26,4 @@ body {
 
 
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 730px;
-    }
 
-    /* Remove the padding we set earlier */
-    .header,
-    .marketing,
-    .footer {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    /* Space out the masthead */
-    .header {
-        margin-bottom: 30px;
-    }
-    
-    /* Remove the bottom border on the jumbotron for visual effect */
-    .jumbotron {
-        border-bottom: 0;
-    }
-}
