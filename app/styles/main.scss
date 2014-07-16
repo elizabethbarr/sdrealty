@@ -2,6 +2,78 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
 
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    background: rgb(231, 231, 231);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bitter', serif;
+}
+
+h2 {
+    font-size: 38px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+a {
+    color: #FA1CA1;
+    &:hover {
+        color: #FA1CA1;
+    }
+}
+
+hr {
+    border-top: 1px solid rgba(238, 238, 238, 0.37);
+}
+
+.main-link {
+    color: white;
+    text-decoration: underline;
+
+    &:hover {
+        color: #FA1CA1;
+    }
+}
+
+.main-link-dark {
+    color: #494949;
+    text-decoration: underline;
+
+    &:hover {
+        color: #FA1CA1;
+    }
+}
+
+// typography
+
+.text-jumbo {
+    line-height: 60px;
+    font-size: 58px;
+}
+
+.text-jumbo-light {
+    line-height: 60px;
+    font-size: 58px;
+    font-weight: 400;
+}
+
+.text-bigger {
+    line-height: 1.6;
+    font-size: 26px;
+    font-weight: 400;
+}
+
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -9,18 +81,491 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
     padding: 0.2em 0;
 }
 
-/* Space out content a bit */
-body {
-    padding-top: 20px;
-    padding-bottom: 20px;
+.font2 {
+    font-family: 'Bitter', serif;
 }
 
+// .contact-info {
+//     line-height: 10px;
+// }
+.e-mail,
+.phone {
+    font-size: 20px;
+}
+
+// Background Colors
+.blue-background {
+    background-color: #258496;
+    color: white;
+}
+
+.blue2-background {
+    background-color: #349AAD;
+    color: white;
+}
+
+.blue3-background {
+    background-color: #57AAB9;
+    color: white;
+}
+
+.blue4-background {
+    background-color: #91C0C9;
+    color: white;
+}
+
+// Buttons
+.btn {
+    color: rgb(83, 83, 83);
+    border: 1px solid rgb(83, 83, 83);
+    &:hover {
+        color: white;
+        background: #FA1CA1;
+    }
+}
+
+.btn-light {
+    color: white;
+    border: 1px solid white;
+}
+
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Custom page header */
 .header {
     border-bottom: 1px solid #e5e5e5;
-    background: url('images/bridge.jpg') no-repeat center top fixed;
+    background: url(../images/bridge.jpg) no-repeat center top fixed;
     background-size: 100%;
     height: 650px;
     color: white;
+
+    /* Make the masthead heading the same height as the navigation */
+    h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 40px;
+        padding-bottom: 19px;
+    }
+}
+
+.header-copy {
+    margin-top: 250px;
+    padding-left: 5%;
+}
+
+.navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: url(../images/gville1.png) no-repeat center top fixed;
+    background-size: 100%;
+    z-index: 10;
+    color: white;
+}
+
+.nav {
+
+    li {
+        margin-right: 10px;
+    }
+
+    li a {
+        color: white;
+        border: 1px solid white;
+
+        &:hover {
+            background-color: #FA1CA1;
+        }
+    }
+}
+
+.about-section {
+    position: relative;
+    padding-top: 20px;
+
+    .about-link {
+        position: absolute;
+        top: -120px;
+    }
+}
+
+.contact-links {
+    padding-left: 0px;
+    li {
+        display: inline-block;
+        padding-right: 10px;
+    }
+}
+
+.cleaner-list {
+    padding-left: 0;
+}
+
+.container-narrow > hr {
+    margin: 20px 0;
+    border-top: 1px solid rgba(238, 238, 238, 0.37);
+}
+
+.container .jumbotron {
+    padding: 30px 50px;
+}
+
+.work {
+    padding-top: 19px;
+    color: #494949;
+    border-top: 1px solid #e5e5e5;
+    position: relative;
+
+    .work-link {
+        position: absolute;
+        top: -120px;
+
+    }
+}
+
+.portfolio-item {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.project-desc {
+    .site-components {
+        padding-left: 0px;
+
+        li {
+            display: inline-block;
+            padding-right: 10px;
+        }
+    }
+}
+
+.project-example {
+    margin-bottom: 30px;
+}
+
+.desktop {
+    background-color: rgb(66, 66, 66);
+    width: 520px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin: 15px auto;
+}
+
+.desktop-img {
+    width: 500px;
+    height: 300px;
+    overflow-x: hidden;
+
+    img {
+        width: 500px;
+    }
+}
+
+.mobile {
+    background-color: rgb(66, 66, 66);
+    width: 150px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 15px;
+    padding-bottom: 0px;
+    position: absolute;
+    z-index: 5;
+    top: 60px;
+    left: 400px;
+
+    .mobile-btn {
+        width: 15px;
+        height: 15px;
+        border: 1px solid gray;
+        border-radius: 50%;
+        margin: 10px auto;
+    }
+}
+
+.mobile-img {
+    width: 120px;
+    height: 250px;
+    overflow-x: hidden;
+
+    img {
+        width: 120px;
+    }
+}
+
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    background: #F0F0F0;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 18px;
+    .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+
+    li {
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 1000px;
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .header {
+        background-size: 150%;
+        height: 500px;
+    }
+
+    .text-jumbo-light {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .mobile {
+        left: 500px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        background: url(../images/reflection.jpg) no-repeat top center fixed;
+        background-size: 200%;
+        height: 500px;
+
+        .header-copy {
+            margin-top: 350px;
+        }
+    }
+
+    .navigation {
+        background: url(../images/reflection.jpg) no-repeat top center fixed;
+        background-size: 200%;
+        // position: absolute;
+        // top: 0;
+    }
+
+    .about-section {
+        .about-link {
+            top: -190px;
+        }
+    }
+
+    .work {
+        .work-link {
+            top: -200px;
+        }
+    }
+
+    .text-jumbo-light {
+        font-size: 35px;
+    }
+
+    .project-example {
+        margin-bottom: 40px;
+    }
+
+    .desktop {
+    background-color: rgb(66, 66, 66);
+    width: 400px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin: 15px auto;
+    }
+
+    .desktop-img {
+        width: 380px;
+        height: 200px;
+        overflow-x: hidden;
+
+        img {
+            width: 380px;
+        }
+    }
+
+    .mobile {
+        background-color: rgb(66, 66, 66);
+        width: 110px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding: 10px;
+        padding-bottom: 0px;
+        top: 20px;
+        left: 65%;
+
+        .mobile-btn {
+            width: 15px;
+            height: 15px;
+            border: 1px solid gray;
+            border-radius: 50%;
+            margin: 10px auto;
+        }
+    }
+
+    .mobile-img {
+        width: 90px;
+        height: 180px;
+        overflow-x: hidden;
+
+        img {
+            width: 90px;
+        }
+    }
+    
+    .nav-info {
+        text-align: center;
+        display: block;
+    }
+
+    .client-job-title {
+        font-size: 23px;
+    }
+
+    .phone {
+        font-size: 36px;
+    }
+
+    .e-mail {
+        font-size: 21px;
+    }
+
+    .nav-pills {
+        margin-top: 10px;
+    }
+
+    .pull-right {
+        float: none;
+    }
+
+}
+
+@media screen and (max-width: 670px) {
+    .nav li {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    .nav-pills li {
+        margin-left: 2px;
+        a {
+            // border-radius: 0px;
+        }
+    }
+
+    .about-section {
+        .about-link {
+            top: -250px;
+        }
+    }
+
+    .work {
+        .work-link {
+            top: -260px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .desktop {
+        width: 300px;
+    }
+
+    .desktop-img {
+        width: 280px;
+
+        img {
+            width: 280px;
+        }
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .header {
+        height: 400px;
+        .header-copy {
+            margin-top: 300px;
+        }
+    }
+}
+@media screen and (max-width: 390px) {
+    .navigation {
+        background: #258496;
+        position: absolute;
+        top: 0px;
+    }
+
+    .header {
+        background-size: 330%;
+        height: 430px;
+
+        .header-copy {
+            margin-top: 330px;
+        }
+    }
+
+    .container {
+
+        .jumbotron {
+            padding: 10px 33px;
+        }
+    }
+
+    .about-section {
+        .about-link {
+            top: -30px;
+        }
+    }
+
+    .work {
+        .work-link {
+            top: -30px;
+        }
+    }
 }
 
 
