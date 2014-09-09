@@ -142,7 +142,16 @@ hr {
 /* sdrealty */
 
 
-
+#offset {
+    position: fixed;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 10px 0;
+    z-index: 999;
+}
 
 
 
