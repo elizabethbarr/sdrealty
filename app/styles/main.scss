@@ -180,6 +180,43 @@ header {
     }
 }
 
+.panel-container {
+    height: 600px;
+    background-color: #fff;
+
+}
+
+.left-panel {
+    position: relative;
+    display: inline;
+    float: left;
+    width: 50%;
+    overflow: hidden;
+    padding: 20px 20px 20px 20px;
+}    
+
+.right-panel {
+    position: relative;
+    display: inline;
+    float: right;
+    width: 50%;
+    height: 520px;
+    padding: 20px 20px 20px 20px;
+}
+
+.right-panel .right-panel-text {
+    background-color: rgb(176, 180, 183);
+    height: 560px;
+    position: absolute;
+}
+
+.right-panel .right-panel-text .right-photo{
+    padding: 20px;
+    float: right;
+    position: relative;
+}
+
+
 #carousel {
         width: 480px;
         overflow: hidden;
@@ -199,32 +236,6 @@ header {
         float: left;
     }
 
-.panel-container {
-    width: 100%;
-    border: 1px black;
-    background-color: #6d6969;
-    position: relative;
-
-}
-
-.left-panel {
-    border: 1px red;
-    position: absolute;
-    display: inline-block;
-    float: left;
-    width: 50%;
-    height: 100%;
-}    
-
-.right-panel {
-    border: 1px green;
-    position: absolute;
-    display: inline-block;
-    float: right;
-    width: 50%;
-    height: 100%;
-}
-
 
 .landingpage-bottomimage {
     top: 2000px;
@@ -232,6 +243,10 @@ header {
     background: url(../images/homes.jpg) no-repeat center top fixed;
     background-size: 100%;
     height: 100%;
+}
+
+
+.footer {
 
 }
 
