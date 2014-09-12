@@ -199,16 +199,29 @@ header {
         float: left;
     }
 
-.left-block {
-    width: 50%;
-    background: url(../images/bridge.jpg) no-repeat center top fixed;
+.panel-container {
+    width: 100%;
+    border: 1px black;
+    background-color: #6d6969;
+    position: relative;
 
+}
+
+.left-panel {
+    border: 1px red;
+    background: url(../images/bridge.jpg) no-repeat center top fixed;
+    background-size: 100%;
+    position: absolute;
+    display: inline-block;
+    height: 100%;
 }    
 
-.right-block {
-    width: 50%;
+.right-panel {
+    border: 1px green;
     background-color: #6d6969;
-
+    position: absolute;
+    display: inline-block;
+    height: 100%;
 }
 
 
