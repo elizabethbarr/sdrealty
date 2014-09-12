@@ -3,9 +3,9 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 @import 'sass-bootstrap/lib/bootstrap';
 
 body {
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    background-color: #222222;
+    font-family: 'Didot';
+    font-size: 24px;
+    background-color: rgb(231,231,231);
     line-height: 1.6;
 }
 
@@ -130,69 +130,37 @@ hr {
 }
 
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-
-/* sdrealty */
-
-
-#offset {
-    position: fixed;
-    top: 0;
-    text-align: center;
+.container {
     width: 100%;
-    background-color: rgba(0,0,0,0.5);
-    color: #fff;
-    padding: 10px 0;
-    z-index: 999;
-}
-
-
-
-
-
-/* sdrealty */
-
-
-
-/* Custom page header */
-.header {
-    border-bottom: 1px solid #e5e5e5;
-    background: url(../images/bridge.jpg) no-repeat center top fixed;
+    background: url(../images/acadia.jpg) no-repeat center top fixed;
     background-size: 100%;
-    height: 650px;
-    color: white;
-
-    /* Make the masthead heading the same height as the navigation */
-    h3 {
-        margin-top: 0;
-        margin-bottom: 0;
-        line-height: 40px;
-        padding-bottom: 19px;
-    }
-}
-
-.header-copy {
-    margin-top: 250px;
-    padding-left: 5%;
-}
-
-.navigation {
-    position: fixed;
+    height: 100%;
     top: 0;
+
+}
+
+header {
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+    z-index: 99;
+}
+    
+    header p {
+        color: #f3cc11;
+        line-height: 1.2em;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1140px;
+}
+.navigation {
     width: 100%;
-    border-bottom: 1px solid white;
     padding-top: 15px;
     padding-bottom: 15px;
-    background: url(../images/bridge.jpg) no-repeat center top fixed;
     background-size: 100%;
-    z-index: 10;
     color: white;
 }
 
@@ -214,7 +182,7 @@ hr {
 
 #carousel {
         width: 480px;
-        overflow:hidden;
+        overflow: hidden;
     }
 
     #carousel ul {
@@ -228,389 +196,8 @@ hr {
         text-align: center;
         height: 280px;
         list-style: none;
-        float:  left;
+        float: left;
     }
-
-
-.about-section {
-    position: relative;
-    padding-top: 20px;
-
-    .about-link {
-        position: absolute;
-        top: -120px;
-    }
-}
-
-.contact-links {
-    padding-left: 0px;
-    li {
-        display: inline-block;
-        padding-right: 10px;
-    }
-}
-
-.cleaner-list {
-    padding-left: 0;
-}
-
-.container-narrow > hr {
-    margin: 20px 0;
-    border-top: 1px solid rgba(238, 238, 238, 0.37);
-}
-
-.container .jumbotron {
-    padding: 30px 50px;
-}
-
-.work {
-    padding-top: 19px;
-    color: #494949;
-    border-top: 1px solid #e5e5e5;
-    position: relative;
-
-    .work-link {
-        position: absolute;
-        top: -120px;
-
-    }
-}
-
-.portfolio-item {
-    padding-top: 20px;
-    padding-bottom: 30px;
-    position: relative;
-}
-
-.project-desc {
-    .site-components {
-        padding-left: 0px;
-
-        li {
-            display: inline-block;
-            padding-right: 10px;
-        }
-    }
-}
-
-.project-example {
-    margin-bottom: 30px;
-}
-
-.desktop {
-    background-color: rgb(66, 66, 66);
-    width: 520px;
-    border: 1px solid gray;
-    border-radius: 5px;
-    padding: 10px;
-    padding-bottom: 20px;
-    margin: 15px auto;
-}
-
-.desktop-img {
-    width: 500px;
-    height: 300px;
-    overflow-x: hidden;
-
-    img {
-        width: 500px;
-    }
-}
-
-.mobile {
-    background-color: rgb(66, 66, 66);
-    width: 150px;
-    border: 1px solid gray;
-    border-radius: 5px;
-    padding: 15px;
-    padding-bottom: 0px;
-    position: absolute;
-    z-index: 5;
-    top: 60px;
-    left: 400px;
-
-    .mobile-btn {
-        width: 15px;
-        height: 15px;
-        border: 1px solid gray;
-        border-radius: 50%;
-        margin: 10px auto;
-    }
-}
-
-.mobile-img {
-    width: 120px;
-    height: 250px;
-    overflow-x: hidden;
-
-    img {
-        width: 120px;
-    }
-}
-
-
-/* Main marketing message and sign up button */
-.jumbotron {
-    background: #F0F0F0;
-    border-bottom: 1px solid #e5e5e5;
-    font-size: 18px;
-    .btn {
-        font-size: 21px;
-        padding: 14px 24px;
-    }
-
-    p {
-        line-height: 1.6;
-    }
-
-    li {
-        line-height: 1.6;
-        margin-bottom: 10px;
-    }
-}
-
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 1000px;
-    }
-
-    /* Remove the padding we set earlier */
-    .header,
-    .marketing,
-    .footer {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    /* Space out the masthead */
-    .header {
-        margin-bottom: 30px;
-    }
-    
-    /* Remove the bottom border on the jumbotron for visual effect */
-    .jumbotron {
-        border-bottom: 0;
-    }
-}
-
-@media screen and (max-width: 1050px) {
-    .header {
-        background-size: 150%;
-        height: 500px;
-    }
-
-    .text-jumbo-light {
-        font-size: 50px;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .mobile {
-        left: 500px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .header {
-        background: url(../images/reflection.jpg) no-repeat top center fixed;
-        background-size: 200%;
-        height: 500px;
-
-        .header-copy {
-            margin-top: 350px;
-        }
-    }
-
-    .navigation {
-        background: url(../images/reflection.jpg) no-repeat top center fixed;
-        background-size: 200%;
-        // position: absolute;
-        // top: 0;
-    }
-
-    .about-section {
-        .about-link {
-            top: -190px;
-        }
-    }
-
-    .work {
-        .work-link {
-            top: -200px;
-        }
-    }
-
-    .text-jumbo-light {
-        font-size: 35px;
-    }
-
-    .project-example {
-        margin-bottom: 40px;
-    }
-
-    .desktop {
-    background-color: rgb(66, 66, 66);
-    width: 400px;
-    border: 1px solid gray;
-    border-radius: 5px;
-    padding: 10px;
-    padding-bottom: 20px;
-    margin: 15px auto;
-    }
-
-    .desktop-img {
-        width: 380px;
-        height: 200px;
-        overflow-x: hidden;
-
-        img {
-            width: 380px;
-        }
-    }
-
-    .mobile {
-        background-color: rgb(66, 66, 66);
-        width: 110px;
-        border: 1px solid gray;
-        border-radius: 5px;
-        padding: 10px;
-        padding-bottom: 0px;
-        top: 20px;
-        left: 65%;
-
-        .mobile-btn {
-            width: 15px;
-            height: 15px;
-            border: 1px solid gray;
-            border-radius: 50%;
-            margin: 10px auto;
-        }
-    }
-
-    .mobile-img {
-        width: 90px;
-        height: 180px;
-        overflow-x: hidden;
-
-        img {
-            width: 90px;
-        }
-    }
-    
-    .nav-info {
-        text-align: center;
-        display: block;
-    }
-
-    .client-job-title {
-        font-size: 23px;
-    }
-
-    .phone {
-        font-size: 36px;
-    }
-
-    .e-mail {
-        font-size: 21px;
-    }
-
-    .nav-pills {
-        margin-top: 10px;
-    }
-
-    .pull-right {
-        float: none;
-    }
-
-}
-
-@media screen and (max-width: 670px) {
-    .nav li {
-        width: 100%;
-        text-align: center;
-        padding-bottom: 5px;
-    }
-
-    .nav-pills li {
-        margin-left: 2px;
-        a {
-            // border-radius: 0px;
-        }
-    }
-
-    .about-section {
-        .about-link {
-            top: -250px;
-        }
-    }
-
-    .work {
-        .work-link {
-            top: -260px;
-        }
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .desktop {
-        width: 300px;
-    }
-
-    .desktop-img {
-        width: 280px;
-
-        img {
-            width: 280px;
-        }
-    }
-}
-
-@media screen and (max-width: 440px) {
-    .header {
-        height: 400px;
-        .header-copy {
-            margin-top: 300px;
-        }
-    }
-}
-@media screen and (max-width: 390px) {
-    .navigation {
-        background: #258496;
-        position: absolute;
-        top: 0px;
-    }
-
-    .header {
-        background-size: 330%;
-        height: 430px;
-
-        .header-copy {
-            margin-top: 330px;
-        }
-    }
-
-    .container {
-
-        .jumbotron {
-            padding: 10px 33px;
-        }
-    }
-
-    .about-section {
-        .about-link {
-            top: -30px;
-        }
-    }
-
-    .work {
-        .work-link {
-            top: -30px;
-        }
-    }
-}
-
 
 
 
