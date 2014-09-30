@@ -1,4 +1,5 @@
-$(document).ready() {
+$( document ).ready(function() {
+    console.log( "ready!" );
 
 $("#slideshow > div:gt(0)").hide();
 
@@ -11,4 +12,4 @@ setInterval(function() {
     .appendTo('#slideshow');
 },  3000);
 
-};
+});
